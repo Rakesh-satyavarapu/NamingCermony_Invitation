@@ -1,0 +1,41 @@
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes goldenGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(185, 154, 88, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(185, 154, 88, 0.65);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.floating {
+  animation: floating 4s ease-in-out infinite;
+}
+
+.golden-glow {
+  animation: goldenGlow 3s ease-in-out infinite;
+}
+
+.rotating-mandala {
+  animation: rotateSlow 60s linear infinite;
+}

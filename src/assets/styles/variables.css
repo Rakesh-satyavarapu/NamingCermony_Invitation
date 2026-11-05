@@ -1,0 +1,35 @@
+:root {
+  /* Royal purple */
+  --royal-purple: #49345F;
+  --deep-purple: #352342;
+
+  /* Gold */
+  --antique-gold: #B99A58;
+  --light-gold: #E2C98D;
+  --gold-highlight: #F6E7BD;
+
+  /* Lavender */
+  --pearl-lavender: #F8F3FA;
+  --soft-lavender: #E8D7EF;
+  --dusty-lavender: #CBB4DA;
+
+  /* Princess accents */
+  --soft-rose: #F1DDE5;
+  --warm-ivory: #FFFDF8;
+
+  /* Text */
+  --text-primary: #49345F;
+  --text-secondary: #766A7D;
+
+  /* Fonts */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-telugu: "Noto Serif Telugu", serif;
+
+  /* Layout */
+  --content-width: 1250px;
+
+  /* Shadows */
+  --royal-shadow: 0 15px 45px rgba(53, 35, 66, 0.15);
+  --gold-glow: 0 0 30px rgba(185, 154, 88, 0.35);
+}

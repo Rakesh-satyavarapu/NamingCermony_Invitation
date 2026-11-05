@@ -1,0 +1,2556 @@
+
+:root {
+  --border-gold: rgba(185, 154, 88, 0.4);
+}
+
+/* ========================================
+   COMMON FULL-SCREEN SECTIONS
+======================================== */
+
+.invitation-section {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 90px 5%;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 75px;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section-ivory {
+  background: var(--warm-ivory);
+  color: var(--royal-purple);
+}
+
+.section-lavender {
+  background: linear-gradient(
+    135deg,
+    #F8F3FA,
+    #EEE3F3,
+    #F8F3FA
+  );
+  color: var(--royal-purple);
+}
+
+.section-dark {
+  background: linear-gradient(
+    135deg,
+    #352342,
+    #49345F,
+    #604575
+  );
+  color: var(--warm-ivory);
+}
+
+.section-title-block {
+  margin-bottom: 55px;
+}
+
+.section-eyebrow {
+  color: var(--antique-gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 5vw, 65px);
+  color: var(--royal-purple);
+  margin: 15px 0;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.gold-caption {
+  color: var(--antique-gold);
+  margin-top: 25px;
+}
+
+/* ========================================
+   BABY INTRODUCTION
+======================================== */
+
+.baby-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.baby-photo-outer {
+  text-align: center;
+}
+
+.baby-photo-frame {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 12px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    135deg,
+    #F6E7BD,
+    #B99A58,
+    #E2C98D
+  );
+
+  border-radius: 22px;
+  box-shadow: var(--royal-shadow);
+}
+
+.baby-photo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 550px;
+  object-fit: contain;
+  border: 3px solid var(--warm-ivory);
+  border-radius: inherit;
+  box-sizing: border-box;
+}
+.photo-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  color: var(--antique-gold);
+  margin-top: 20px;
+  font-family: var(--font-heading);
+  font-size: 23px;
+}
+
+.baby-details {
+  text-align: center;
+}
+
+.baby-telugu,
+.ceremony-telugu {
+  color: var(--antique-gold);
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.family-names {
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid var(--border-gold);
+  border-radius: 18px;
+  background: rgba(255, 253, 248, 0.55);
+}
+
+.family-names h3 {
+  font-size: 26px;
+  margin: 8px 0;
+}
+
+.family-names span {
+  color: var(--antique-gold);
+  font-size: 23px;
+}
+
+/* ========================================
+   MUHURTHAM SECTION
+======================================== */
+
+.muhurtham-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.cradle-image-border {
+  padding: 10px;
+  border: 1px solid var(--antique-gold);
+  border-radius: 25px;
+  background: #FFFDF8;
+  box-shadow: var(--royal-shadow);
+}
+
+.cradle-image {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.cradle-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--antique-gold);
+  margin-top: 20px;
+  font-family: var(--font-heading);
+  font-size: 23px;
+}
+
+.muhurtham-details {
+  padding: 25px;
+  border: 1px solid var(--border-gold);
+  border-radius: 22px;
+  background: rgba(248, 243, 250, 0.7);
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.detail-item > svg {
+  color: var(--antique-gold);
+  min-width: 24px;
+  margin-top: 4px;
+}
+
+.detail-item span {
+  color: var(--antique-gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.detail-item h3 {
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+.detail-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.royal-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 12px 23px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--deep-purple);
+
+  background: linear-gradient(
+    135deg,
+    #F6E7BD,
+    #B99A58
+  );
+
+  font-weight: 600;
+}
+
+
+/* ========================================
+   EVENTS TIMELINE
+======================================== */
+
+.events-section {
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(185, 154, 88, 0.09),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #F8F3FA,
+      #FDFBF7,
+      #EEE3F3
+    );
+}
+
+/* Timeline container */
+
+.events-timeline {
+  position: relative;
+  max-width: 950px;
+  margin: 60px auto 30px;
+}
+
+/* Vertical golden line */
+
+.events-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #B99A58,
+    #E2C98D,
+    #B99A58,
+    transparent
+  );
+}
+
+/* Each timeline event */
+
+.event-timeline-item {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.event-left {
+  padding-right: 45px;
+  justify-content: flex-end;
+}
+
+.event-right {
+  margin-left: 50%;
+  padding-left: 45px;
+  justify-content: flex-start;
+}
+
+/* Circular event icons */
+
+.event-icon {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #B99A58;
+  border-radius: 50%;
+
+  background: #FFFDF8;
+  color: #A88946;
+
+  box-shadow: 0 5px 18px rgba(91, 65, 104, 0.15);
+  z-index: 2;
+}
+
+.event-left .event-icon {
+  right: -24px;
+}
+
+.event-right .event-icon {
+  left: -24px;
+}
+
+/* Event cards */
+
+.event-card {
+  width: 100%;
+  max-width: 390px;
+  padding: 27px;
+
+  border: 1px solid rgba(185, 154, 88, 0.5);
+  border-radius: 20px;
+
+  background: rgba(255, 253, 248, 0.9);
+
+  box-shadow:
+    0 12px 30px rgba(73, 52, 95, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 38px rgba(73, 52, 95, 0.15);
+}
+
+.event-card-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #A88946;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.event-card h3 {
+  margin: 15px 0 10px;
+
+  color: #49345F;
+  font-family: var(--font-heading);
+  font-size: 27px;
+}
+
+.event-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.event-card-decoration {
+  margin-top: 17px;
+  padding-top: 13px;
+
+  border-top: 1px solid var(--border-gold);
+
+  color: #B99A58;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* Closing message */
+
+.events-closing-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 50px;
+  text-align: center;
+
+  color: #A88946;
+}
+
+.events-closing-message p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 22px;
+}
+
+/* Mobile timeline */
+
+@media (max-width: 768px) {
+
+  .events-timeline {
+    max-width: 100%;
+    margin: 40px auto;
+  }
+
+  .events-timeline::before {
+    left: 23px;
+  }
+
+  .event-timeline-item,
+  .event-left,
+  .event-right {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 65px;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .event-left .event-icon,
+  .event-right .event-icon {
+    left: 0;
+    right: auto;
+  }
+
+  .event-card {
+    max-width: 100%;
+    padding: 22px;
+  }
+
+  .event-card h3 {
+    font-size: 23px;
+  }
+
+  .events-closing-message {
+    padding: 0 15px;
+  }
+
+  .events-closing-message p {
+    font-size: 18px;
+  }
+}
+
+/* ========================================
+   CEREMONY SCHEDULE
+======================================== */
+
+.schedule-list {
+  margin-top: 30px;
+}
+
+.schedule-list h3 {
+  font-family: var(--font-heading);
+  font-size: 27px;
+}
+
+.schedule-item {
+  display: flex;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border-gold);
+}
+
+.schedule-item > span {
+  min-width: 90px;
+  color: var(--antique-gold);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.schedule-item p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* ========================================
+   NAME REVEAL
+======================================== */
+
+.reveal-content {
+  text-align: center;
+}
+
+.reveal-mandala {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(250px, 45vw, 550px);
+  color: rgba(226, 201, 141, 0.08);
+  pointer-events: none;
+  animation: rotateSlow 90s linear infinite;
+}
+
+.gold-icon {
+  color: var(--light-gold);
+}
+
+.reveal-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 6vw, 68px);
+  color: var(--gold-highlight);
+  margin: 20px 0;
+}
+
+.reveal-message {
+  color: var(--soft-lavender);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 850px;
+  margin: 45px auto;
+}
+
+.countdown-box {
+  padding: 30px 12px;
+  border: 1px solid var(--antique-gold);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.countdown-box strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 5vw, 55px);
+  color: var(--gold-highlight);
+}
+
+.countdown-box span {
+  font-size: 11px;
+  color: var(--light-gold);
+  letter-spacing: 3px;
+}
+
+.reveal-date {
+  color: var(--light-gold);
+  letter-spacing: 2px;
+}
+
+.revealed-name {
+  padding: 40px 15px;
+  color: var(--gold-highlight);
+}
+
+.revealed-name h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(50px, 9vw, 100px);
+  color: var(--gold-highlight);
+  margin: 25px 0;
+}
+
+/* ========================================
+   BABY & FAMILY GALLERY
+======================================== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.gallery-item {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--antique-gold);
+  border-radius: 20px;
+  box-shadow: var(--royal-shadow);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  background: rgba(53, 35, 66, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.royal-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 253, 248, 0.94);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.navbar-inner {
+  max-width: 1400px;
+  min-height: 72px;
+  padding: 12px 4%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  color: var(--royal-purple);
+  font-family: var(--font-heading);
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links button {
+  background: none;
+  border: 0;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navbar-links button:hover {
+  color: var(--antique-gold);
+}
+
+.navbar-menu-button {
+  display: none;
+  background: none;
+  border: 0;
+  color: var(--royal-purple);
+}
+
+/* ========================================
+   MUSIC PLAYER
+======================================== */
+
+.music-player-button {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border: 1px solid var(--antique-gold);
+  border-radius: 50px;
+  background: var(--royal-purple);
+  color: var(--gold-highlight);
+  box-shadow: var(--royal-shadow);
+  cursor: pointer;
+}
+
+/* ========================================
+   INVITATION FOOTER
+======================================== */
+
+.invitation-footer {
+  min-height: 65vh;
+  padding: 90px 5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: var(--deep-purple);
+  color: var(--warm-ivory);
+}
+
+.invitation-footer h1 {
+  color: var(--gold-highlight);
+  font-size: clamp(38px, 5vw, 58px);
+  margin: 20px 0;
+}
+
+.footer-message {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.9;
+}
+
+/* Parents displayed separately */
+
+.footer-family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+
+  margin: 28px 0;
+
+  color: var(--light-gold);
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 4vw, 30px);
+  line-height: 1.35;
+  text-align: center;
+}
+
+.footer-family span {
+  display: block;
+}
+
+.family-ampersand {
+  color: var(--gold-highlight);
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.footer-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 23px;
+  border: 1px solid var(--antique-gold);
+  border-radius: 50px;
+  background: var(--antique-gold);
+  color: var(--deep-purple);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-button.secondary {
+  background: transparent;
+  color: var(--gold-highlight);
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  color: var(--light-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+/* ========================================
+   GANESHA REVEAL SCREEN
+======================================== */
+
+.ganesha-screen {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  background: radial-gradient(
+    ellipse at center,
+    #F8EFFA 0%,
+    #EEE0F3 55%,
+    #E5D2EC 100%
+  );
+}
+
+/* Subtle golden light */
+
+.golden-light {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(222, 193, 133, 0.18),
+    transparent 65%
+  );
+}
+
+/* Main Ganesha content */
+
+.ganesha-content {
+  position: relative;
+  z-index: 3;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove unwanted pseudo-element bubbles */
+
+.ganesha-content::before,
+.ganesha-content::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Ganesha image frame */
+
+.ganesha-image-frame {
+  position: relative;
+  z-index: 3;
+
+  width: min(72vw, 300px);
+  aspect-ratio: 1;
+
+  margin: 20px auto;
+  overflow: hidden;
+  isolation: isolate;
+
+  border: 5px solid #C5A45E;
+  border-radius: 50%;
+  background: #FFFCF7;
+
+  box-shadow:
+    0 15px 45px rgba(91, 65, 104, 0.20),
+    0 0 25px rgba(197, 164, 94, 0.20);
+}
+
+.ganesha-image {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Mantra and blessings */
+
+.ganesha-top-label,
+.ganesha-mantra,
+.ganesha-blessing,
+.ganesha-wait-text {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.ganesha-mantra {
+  margin: 25px 0 15px;
+  line-height: 1.7;
+  color: var(--royal-purple);
+}
+
+.ganesha-blessing {
+  max-width: 600px;
+  margin: 15px auto;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.ganesha-wait-text {
+  color: var(--antique-gold);
+  margin: 25px 0;
+}
+
+/* Background flowers must stay behind content */
+
+.floating-floral-background {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.floating-floral-background,
+.floating-floral-background * {
+  pointer-events: none !important;
+}
+
+/* Skip button */
+
+.skip-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: 1px solid var(--antique-gold);
+  border-radius: 50%;
+
+  background: rgba(255, 253, 248, 0.8);
+  color: var(--royal-purple);
+  cursor: pointer;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+
+  .invitation-section {
+    padding: 75px 20px;
+  }
+
+  .baby-layout,
+  .muhurtham-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .baby-photo-frame {
+    max-width: 320px;
+  }
+
+  .cradle-image {
+    height: 350px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .gallery-item {
+    height: 230px;
+  }
+
+  .navbar-menu-button {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: var(--warm-ivory);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .countdown-grid {
+    gap: 8px;
+  }
+
+  .countdown-box {
+    padding: 20px 5px;
+  }
+
+  .countdown-box span {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .ganesha-content {
+    padding: 25px 15px;
+  }
+
+  .ganesha-image-frame {
+    width: min(72vw, 280px);
+    aspect-ratio: 1;
+    margin: 20px auto;
+  }
+
+  .ganesha-mantra {
+    font-size: 25px;
+    line-height: 1.7;
+  }
+
+  .skip-button {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-family {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    height: 300px;
+  }
+
+  .music-player-button {
+    right: 12px;
+    bottom: 12px;
+    padding: 11px 15px;
+  }
+
+  .countdown-box {
+    padding: 16px 3px;
+  }
+}
+
+
+/* Muhurtham image fallback */
+
+#ceremony .cradle-image-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 25px;
+  text-align: center;
+
+  color: #A88946;
+  background: linear-gradient(
+    145deg,
+    #F8EFFA,
+    #FFFDF8
+  );
+}
+
+.cradle-image-fallback h3 {
+  font-family: var(--font-heading);
+  color: var(--royal-purple);
+}
+
+.cradle-image-fallback p {
+  max-width: 300px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* Muhurtham blessing */
+
+#ceremony .muhurtham-blessing {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-gold);
+  color: var(--antique-gold);
+}
+
+#ceremony .muhurtham-blessing svg {
+  flex-shrink: 0;
+}
+
+#ceremony .muhurtham-blessing p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Image consistency */
+
+#ceremony .cradle-image-border {
+  min-height: 350px;
+}
+
+#ceremony .cradle-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =====================================
+   BOLD & ROYAL TYPOGRAPHY
+===================================== */
+
+/* Main section headings */
+.section-heading,
+.baby-details h1 {
+  font-family: var(--font-heading);
+  font-weight: 700 !important;
+  color: #50345F !important;
+  letter-spacing: 0.3px;
+}
+
+/* Baby name heading */
+.baby-details h1 {
+  font-weight: 700 !important;
+  text-shadow: 0 2px 1px rgba(80, 52, 95, 0.08);
+}
+
+/* Parents' names */
+.parents-signature h3,
+.family-names h3 {
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 700 !important;
+  color: #50345F !important;
+  letter-spacing: 0.4px;
+}
+
+/* Ampersand */
+.parents-ampersand,
+.family-ampersand {
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 600;
+  color: #A68135 !important;
+}
+
+/* Telugu headings */
+.telugu-text,
+.baby-telugu,
+.ceremony-telugu {
+  font-family: var(--font-telugu);
+  font-weight: 700 !important;
+  color: #A68135 !important;
+}
+
+/* Section labels */
+.section-eyebrow,
+.parents-label {
+  font-family: var(--font-body);
+  font-weight: 800 !important;
+  letter-spacing: 3px;
+  color: #A68135 !important;
+}
+
+/* Navigation */
+.navbar-brand {
+  font-weight: 700 !important;
+  color: #50345F !important;
+}
+
+.navbar-links button {
+  font-weight: 700 !important;
+  color: #50345F !important;
+}
+
+/* Body text */
+.section-description,
+.baby-description {
+  font-weight: 500;
+  color: #65516F !important;
+  line-height: 1.9;
+}
+
+/* Important event details */
+.detail-item h3,
+.event-card h3 {
+  font-weight: 700 !important;
+  color: #50345F !important;
+}
+
+
+/* ==========================================
+   MUHURTHAM - EQUAL HEIGHT CARDS
+========================================== */
+
+.muhurtham-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 45px auto 0;
+}
+
+/* Both cards have identical height */
+.cradle-frame,
+.muhurtham-details {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: 560px;
+  min-height: 560px;
+  border-radius: 28px;
+}
+
+/* Left card */
+.cradle-frame {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: #FFFCF7;
+  border: 1px solid #C5A45E;
+  box-shadow: 0 18px 45px rgba(80, 52, 95, 0.10);
+  overflow: hidden;
+}
+
+/* Cradle photograph */
+.cradle-image-border {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #F4EAF7,
+    #FFFCF7
+  );
+}
+
+.cradle-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+}
+
+/* Image fallback */
+.cradle-image-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  color: #A68135;
+  background: linear-gradient(
+    135deg,
+    #F4EAF7,
+    #FFFCF7
+  );
+}
+
+.cradle-image-fallback h3 {
+  margin: 18px 0 12px;
+  font-family: var(--font-heading);
+  font-size: 30px;
+  color: #50345F;
+  font-weight: 600;
+}
+
+.cradle-image-fallback p {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #76627F;
+}
+
+/* Caption inside left card */
+.cradle-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-height: 75px;
+  margin: 0;
+  padding: 12px 5px 0;
+  color: #A68135;
+  font-family: var(--font-heading);
+  font-size: clamp(17px, 1.6vw, 24px);
+  font-weight: 600;
+  text-align: center;
+}
+
+.cradle-caption svg {
+  flex-shrink: 0;
+}
+
+/* Right card */
+.muhurtham-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px;
+  background: rgba(249, 244, 250, 0.95);
+  border: 1px solid rgba(197, 164, 94, 0.45);
+  border-radius: 28px;
+}
+
+/* Information rows */
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(197, 164, 94, 0.4);
+}
+
+.detail-item:first-child {
+  padding-top: 15px;
+}
+
+.detail-item .detail-icon {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  color: #B18B43;
+}
+
+.detail-item span {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #A68135;
+}
+
+.detail-item h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(21px, 2vw, 27px);
+  font-weight: 700;
+  color: #50345F;
+}
+
+.detail-item p {
+  margin: 8px 0 0;
+  color: #76627F;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Directions button */
+.royal-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-self: flex-start;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: 1px solid #B18B43;
+  border-radius: 30px;
+  color: #50345F;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.royal-link-button:hover {
+  background: #50345F;
+  color: #FFFCF7;
+}
+
+/* Blessing stays at the bottom */
+.muhurtham-blessing {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: auto;
+  padding-top: 22px;
+  border-top: 1px solid rgba(197, 164, 94, 0.4);
+  color: #A68135;
+}
+
+.muhurtham-blessing svg {
+  flex-shrink: 0;
+}
+
+.muhurtham-blessing p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #A68135;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .muhurtham-layout {
+    gap: 24px;
+  }
+
+  .cradle-frame,
+  .muhurtham-details {
+    height: 520px;
+    min-height: 520px;
+  }
+
+  .muhurtham-details {
+    padding: 22px;
+  }
+
+  .detail-item {
+    gap: 14px;
+    padding: 20px 0;
+  }
+}
+
+/* Mobile - stack cards naturally */
+@media (max-width: 768px) {
+  .muhurtham-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .cradle-frame {
+    height: 430px;
+    min-height: 430px;
+  }
+
+  .muhurtham-details {
+    height: auto;
+    min-height: 430px;
+    padding: 22px;
+  }
+
+  .cradle-caption {
+    font-size: 19px;
+  }
+
+  .detail-item h3 {
+    font-size: 23px;
+  }
+
+  .muhurtham-blessing {
+    margin-top: 30px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .cradle-frame {
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .muhurtham-details {
+    min-height: 400px;
+    padding: 18px;
+  }
+
+  .detail-item {
+    padding: 18px 0;
+  }
+
+  .cradle-caption {
+    font-size: 16px;
+    gap: 7px;
+  }
+
+  .muhurtham-blessing p {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================
+   ELEGANT ROYAL NAVIGATION BAR
+========================================= */
+
+.royal-navbar {
+  background: rgba(255, 252, 247, 0.97);
+  border-bottom: 1px solid rgba(185, 154, 88, 0.35);
+  box-shadow: 0 3px 15px rgba(80, 52, 95, 0.035);
+  backdrop-filter: blur(12px);
+}
+
+/* Brand */
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 27px;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px;
+  color: #50345F !important;
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navbar-links button {
+  position: relative;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500 !important;
+  letter-spacing: 0.35px;
+
+  color: #65536F !important;
+  transition: color 0.3s ease;
+}
+
+/* Elegant gold underline */
+.navbar-links button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+
+  width: 0;
+  height: 1.5px;
+
+  background: #B99A58;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar-links button:hover,
+.navbar-links button.active {
+  color: #A68135 !important;
+  font-weight: 600 !important;
+}
+
+.navbar-links button:hover::after,
+.navbar-links button.active::after {
+  width: 100%;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 23px;
+  }
+
+  .navbar-links {
+    gap: 12px;
+  }
+
+  .navbar-links button {
+    font-size: 13px;
+    font-weight: 500 !important;
+  }
+}
+
+
+
+/* ==========================================
+   ELEGANT DATE AND MUHURTHAM DESIGN
+========================================== */
+
+/* Date */
+.date-content {
+  width: 100%;
+}
+
+.elegant-date {
+  margin-top: 5px;
+  font-family: var(--font-heading);
+  font-size: 29px;
+  font-weight: 700;
+  color: #50345F;
+  line-height: 1.4;
+}
+
+/* Muhurtham time */
+.muhurtham-time-content {
+  width: 100%;
+}
+
+.muhurtham-clock {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 5px 0;
+}
+
+.muhurtham-clock strong {
+  font-family: var(--font-heading);
+  font-size: 43px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #50345F;
+  line-height: 1.2;
+}
+
+.muhurtham-clock > span {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: #A68135;
+  letter-spacing: 1px;
+}
+
+/* Morning to afternoon */
+.muhurtham-period {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 8px 0 !important;
+  color: #A68135;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.muhurtham-period svg {
+  flex-shrink: 0;
+}
+
+.muhurtham-time-content small {
+  display: block;
+  margin-top: 7px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-style: italic;
+  color: #76627F;
+}
+
+/* Equal-height layout */
+.muhurtham-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 40px;
+}
+
+.cradle-frame,
+.muhurtham-details {
+  height: 560px;
+  min-height: 560px;
+  box-sizing: border-box;
+}
+
+.muhurtham-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.muhurtham-blessing {
+  margin-top: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .muhurtham-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .cradle-frame {
+    height: 430px;
+    min-height: 430px;
+  }
+
+  .muhurtham-details {
+    height: auto;
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 480px) {
+  .muhurtham-clock strong {
+    font-size: 37px;
+  }
+
+  .elegant-date {
+    font-size: 25px;
+  }
+}
+
+
+/* ==========================================
+   ROYAL MUHURTHAM DATE & TIME
+========================================== */
+
+/* Equal height cards */
+.muhurtham-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 40px;
+}
+
+.cradle-frame,
+.muhurtham-details {
+  height: 560px;
+  min-height: 560px;
+  box-sizing: border-box;
+}
+
+/* Date section */
+.date-content {
+  width: 100%;
+}
+
+.date-display {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.date-display > strong {
+  font-family: var(--font-heading);
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1;
+  color: #50345F;
+}
+
+.date-month-year {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.date-month-year h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 27px;
+  font-weight: 700;
+  color: #A68135;
+}
+
+.date-month-year span {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: #76627F;
+}
+
+.date-weekday {
+  margin: 8px 0 0 !important;
+  font-family: var(--font-body);
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #A68135 !important;
+  text-transform: uppercase;
+}
+
+/* Muhurtham time */
+.muhurtham-time-content {
+  width: 100%;
+}
+
+.muhurtham-clock {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 6px 0;
+}
+
+.muhurtham-clock strong {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #50345F;
+  line-height: 1.2;
+}
+
+.muhurtham-clock > span {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  color: #A68135;
+}
+
+/* Morning to afternoon */
+.muhurtham-period {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 8px 0 !important;
+  color: #A68135;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.muhurtham-period svg {
+  flex-shrink: 0;
+}
+
+.muhurtham-time-content small {
+  display: block;
+  margin-top: 7px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-style: italic;
+  color: #76627F;
+}
+
+/* Right card layout */
+.muhurtham-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.muhurtham-blessing {
+  margin-top: auto;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .muhurtham-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .cradle-frame {
+    height: 430px;
+    min-height: 430px;
+  }
+
+  .muhurtham-details {
+    height: auto;
+    min-height: 430px;
+  }
+
+  .date-display > strong {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-display > strong {
+    font-size: 58px;
+  }
+
+  .date-month-year h3 {
+    font-size: 23px;
+  }
+
+  .muhurtham-clock strong {
+    font-size: 39px;
+  }
+}
+
+/* ===== MUHURTHAM SECTION ALIGNMENT FIX ===== */
+
+.muhurtham-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Keep both cards equal in height */
+.cradle-frame,
+.muhurtham-details {
+  box-sizing: border-box;
+  height: 660px;
+  min-height: 660px;
+}
+
+/* Left cradle card */
+.cradle-frame {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.cradle-image-wrapper {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Right details card */
+.muhurtham-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 42px 36px;
+  overflow: hidden;
+}
+
+/* Date alignment */
+.date-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.date-display > strong {
+  font-family: var(--font-body);
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -3px;
+  color: #50345F;
+  min-width: 70px;
+  text-align: center;
+}
+
+.date-month-year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.date-month-year h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #50345F;
+}
+
+.date-month-year span {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #76627F;
+}
+
+/* Weekday */
+.date-weekday {
+  margin: 14px 0 0 !important;
+  font-family: var(--font-body);
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #A68135 !important;
+}
+
+/* Time */
+.muhurtham-clock {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.muhurtham-clock strong {
+  font-family: var(--font-body);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: #50345F;
+}
+
+/* Keep the blessing inside the card */
+.muhurtham-blessing {
+  margin-top: auto;
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .muhurtham-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .cradle-frame {
+    height: 480px;
+    min-height: 480px;
+  }
+
+  .muhurtham-details {
+    height: auto;
+    min-height: 600px;
+    padding: 30px 22px;
+    overflow: visible;
+  }
+
+  .date-display > strong {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-display > strong {
+    font-size: 54px;
+  }
+
+  .date-month-year h3 {
+    font-size: 25px;
+  }
+
+  .muhurtham-clock strong {
+    font-size: 32px;
+  }
+}
+
+
+/* ==========================================
+   FULL-WIDTH NAME REVEAL FIX
+========================================== */
+
+/* Full width section */
+#reveal {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+/* Remove inherited narrow content layout */
+#reveal .section-content.reveal-content {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1500px !important;
+  margin: 0 auto !important;
+  padding: 0 35px !important;
+  box-sizing: border-box;
+}
+
+/* Countdown layout */
+#reveal .countdown-content {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Grand reveal must occupy the complete available width */
+#reveal .grand-reveal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 65px 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+/* Centre the heading */
+#reveal .reveal-top-heading {
+  position: relative;
+  z-index: 8;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 65px;
+}
+
+/* Centre plaque */
+#reveal .name-reveal-plaque {
+  position: relative;
+  z-index: 8;
+  width: min(650px, 75%);
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Name */
+#reveal .name-reveal-plaque h2 {
+  font-size: clamp(55px, 7vw, 90px);
+  text-align: center;
+}
+
+/* Flower pots */
+#reveal .reveal-flower-pot {
+  position: absolute;
+  z-index: 9;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+#reveal .pot-left {
+  left: 5%;
+}
+
+#reveal .pot-right {
+  right: 5%;
+}
+
+/* Closing blessing */
+#reveal .reveal-closing-message {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin: 45px auto 0;
+  width: 100%;
+}
+
+/* Keep confetti and petals within the reveal section */
+#reveal .reveal-confetti,
+#reveal .reveal-petals {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #reveal {
+    padding: 45px 0;
+  }
+
+  #reveal .section-content.reveal-content {
+    padding: 0 20px !important;
+  }
+
+  #reveal .grand-reveal {
+    min-height: 680px;
+  }
+
+  #reveal .name-reveal-plaque {
+    width: 80%;
+  }
+
+  #reveal .reveal-flower-pot {
+    transform: scale(0.7);
+    bottom: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #reveal .section-content.reveal-content {
+    padding: 0 12px !important;
+  }
+
+  #reveal .grand-reveal {
+    min-height: 600px;
+    padding: 45px 12px;
+    border-radius: 15px;
+  }
+
+  #reveal .reveal-top-heading {
+    margin-bottom: 55px;
+  }
+
+  #reveal .name-reveal-plaque {
+    width: 94%;
+    min-height: 250px;
+    padding: 25px 12px;
+  }
+
+  #reveal .name-reveal-plaque h2 {
+    font-size: 48px;
+  }
+
+  #reveal .reveal-flower-pot {
+    transform: scale(0.45);
+    bottom: 60px;
+  }
+
+  #reveal .pot-left {
+    left: -45px;
+  }
+
+  #reveal .pot-right {
+    right: -45px;
+  }
+
+  #reveal .reveal-closing-message {
+    font-size: 17px;
+    margin-top: 35px;
+  }
+}
+
+
+/* Golden glow only behind the revealed name */
+#reveal .revealed-name {
+  position: relative;
+  isolation: isolate;
+  padding: 45px 15px;
+}
+
+/* Soft glowing light */
+#reveal .revealed-name::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(650px, 90vw);
+  height: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 218, 145, 0.32) 0%,
+    rgba(232, 190, 120, 0.16) 35%,
+    rgba(255, 255, 255, 0.04) 60%,
+    transparent 75%
+  );
+
+  filter: blur(25px);
+  animation: nameGoldenGlow 3s ease-in-out infinite alternate;
+}
+
+/* Shine on the revealed name */
+#reveal .revealed-name h2 {
+  display: inline-block;
+  position: relative;
+  color: #FFE6A8;
+
+  text-shadow:
+    0 0 10px rgba(255, 224, 160, 0.7),
+    0 0 25px rgba(255, 205, 110, 0.6),
+    0 0 50px rgba(255, 190, 90, 0.5);
+
+  transform-origin: center;
+  animation: nameRevealGrow 8s ease-out both !important;
+}
+
+@keyframes nameRevealGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.05);
+    filter: blur(10px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(0.8);
+    filter: blur(2px);
+  }
+
+  80% {
+    transform: scale(1.12);
+    filter: blur(0);
+  }
+
+  90% {
+    transform: scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+
+/* NAVIGATION BAR */
+
+.royal-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 252, 247, 0.97);
+  border-bottom: 1px solid rgba(185, 154, 88, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-inner {
+  max-width: 1400px;
+  min-height: 72px;
+  padding: 12px 4%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 27px;
+  font-weight: 600;
+  color: #50345F;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navbar-links button {
+  position: relative;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: #65536F;
+  font-family: var(--font-body);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navbar-links button:hover {
+  color: #A68135;
+}
+
+.navbar-menu-button {
+  display: none;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #50345F;
+  cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 23px;
+  }
+
+  .navbar-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 22px;
+    background: #FFFCF7;
+    box-shadow: 0 10px 20px rgba(80, 52, 95, 0.12);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+/* MUHURTHAM - EQUAL HEIGHT CARDS */
+#ceremony .muhurtham-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 40px;
+}
+
+/* Both cards always have equal height */
+#ceremony .cradle-frame,
+#ceremony .muhurtham-details {
+  height: 700px !important;
+  min-height: 700px !important;
+  box-sizing: border-box;
+}
+
+/* Right venue card */
+#ceremony .muhurtham-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: visible !important;
+  padding: 30px 36px 40px !important;
+}
+
+/* Directions button */
+#ceremony .royal-link-button {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #ceremony .muhurtham-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  #ceremony .cradle-frame {
+    height: 480px !important;
+    min-height: 480px !important;
+  }
+
+  #ceremony .muhurtham-details {
+    height: auto !important;
+    min-height: 600px !important;
+    padding: 30px 22px 40px !important;
+  }
+}
+
+.event-icon svg {
+  width: 28px;
+  height: 28px;
+  color: #B99A58;
+  stroke-width: 2.2;
+  flex-shrink: 0;
+}
+
+
+
+/* Gallery layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* Gold photo frame */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+
+  border: 3px solid var(--antique-gold);
+  border-radius: 20px;
+
+  background: #FFFCF7;
+  box-shadow: var(--royal-shadow);
+}
+
+/* Photo fills the complete frame */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 16px;
+}
+
+/* Hover decoration */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background: rgba(73, 52, 95, 0.18);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

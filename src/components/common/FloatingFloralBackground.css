@@ -1,0 +1,83 @@
+.floral-background {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+
+  overflow: hidden;
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+.floating-flower {
+  position: absolute;
+  top: -50px;
+
+  display: block;
+  line-height: 1;
+
+  color: var(--antique-gold);
+
+  opacity: 0;
+  will-change: transform, opacity;
+
+  animation-name: flowerFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.flower-1 { color: #D8B9E5; }
+.flower-2 { color: #E8D7EF; }
+.flower-3 { color: #E2C98D; }
+.flower-4 { color: #F1DDE5; }
+.flower-5 { color: #B99A58; }
+
+@keyframes flowerFall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: translate3d(25px, 50vh, 0) rotate(180deg);
+    opacity: 0.55;
+  }
+
+  90% {
+    opacity: 0.35;
+  }
+
+  100% {
+    transform: translate3d(-15px, 110vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .floating-flower {
+    opacity: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .floating-flower {
+    font-size: 18px !important;
+  }
+}
+
+/* Respect accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  .floating-flower {
+    animation: none;
+    display: none;
+  }
+}
